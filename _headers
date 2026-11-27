@@ -1,0 +1,25 @@
+/*
+  Access-Control-Allow-Origin: *
+
+# Que el celular revise siempre si hay una versión nueva (si no cambió, usa la guardada sin descargar de nuevo)
+/index.html
+  Cache-Control: no-cache
+/
+  Cache-Control: no-cache
+/js/*
+  Cache-Control: no-cache
+/css/*
+  Cache-Control: no-cache
+/data/*
+  Cache-Control: no-cache
+/models/*
+  Cache-Control: no-cache
+
+/targets/targets.mind
+  Content-Type: application/octet-stream
+  Cache-Control: no-cache
+
+# Copia comprimida de los empaques: se entrega tal cual (la app la descomprime)
+/targets/targets.mind.gz
+  Content-Type: application/octet-stream
+  Cache-Control: no-cache, no-transform

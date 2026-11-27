@@ -1,0 +1,12 @@
+# Apache & cPanel WebAR MIME Types Configuration
+<IfModule mod_mime.c>
+  AddType application/octet-stream .mind
+  AddType application/wasm .wasm
+  AddType model/gltf-binary .glb
+  AddType model/gltf+json .gltf
+  AddType application/json .json
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>

@@ -1,0 +1,1454 @@
+{
+  "schema": 6,
+  "name": "WebAR Pipas Mega - Experiencia Calibrada (8x14 cm)",
+  "updatedAt": "2026-11-27T15:22:13.870Z",
+  "settings": {
+    "stability": "custom",
+    "custom": {
+      "minCF": 0.001,
+      "beta": 1500,
+      "graceMs": 250
+    },
+    "medalStableMs": 600,
+    "colorCheck": true,
+    "autoContrast": true,
+    "logoTargets": true,
+    "auditPanel": true,
+    "sound": true,
+    "simulator": true,
+    "targetsLayout": [
+      "bolsa",
+      "palabras",
+      "foto",
+      "borroso",
+      "borroso",
+      "borroso",
+      "borroso",
+      "ladoX",
+      "ladoY"
+    ]
+  },
+  "ui": {
+    "loading": {
+      "title": "PIPAS MEGA",
+      "subtitle": "Experiencia de Realidad Aumentada",
+      "statusText": "Inicializando cámara y motor 3D...",
+      "bgColor": "#090d16",
+      "cardColor": "#121a2d",
+      "titleColor": "#84cc16",
+      "accent": "#84cc16",
+      "accent2": "#22d3ee",
+      "logoUrl": ""
+    },
+    "finale": {
+      "enabled": true,
+      "imageUrl": "assets/medalla_premio_final.svg",
+      "title": "¡COLECCIÓN MEGA COMPLETADA!",
+      "subtitle": "¡Escaneaste los 4 empaques Pipas Mega y desbloqueaste las 4 medallas!",
+      "buttonText": "🎉 ¡Seguir Explorando!",
+      "buttonUrl": ""
+    },
+    "hola": {
+      "text": "",
+      "color": "#facc15",
+      "textColor": "#020617",
+      "showButton": true
+    },
+    "help": "Apunta la cámara a cualquiera de los 4 empaques Pipas Mega. Toca los objetos 3D para ver información. Escanea los 4 para ganar el premio.",
+    "fonts": [
+      {
+        "family": "PipasDisplay",
+        "url": "assets/pipas_display.ttf"
+      },
+      {
+        "family": "Hanson-Bold",
+        "url": "assets/uploads/mvwla6ab_Hanson-Bold.ttf"
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "id": "pica_limon",
+      "targetIndex": 0,
+      "name": "Pipas Mega Pica Limón",
+      "short": "Pica Limón",
+      "emoji": "🌶️",
+      "imageUrl": "targets/target_pica_limon.png",
+      "aspect": 0.634765625,
+      "logoZone": {
+        "x0": 0.16,
+        "x1": 0.96,
+        "y0": 0.21,
+        "y1": 0.48
+      },
+      "realPhotos": [
+        "targets/real_pica_limon.jpg"
+      ],
+      "color": "#ef4444",
+      "accent": "#22c55e",
+      "hint": "Apunta la cámara a tu empaque de Pipas Mega Pica Limón (Rojo y Verde)",
+      "lights": {
+        "ambientColor": "#ffffff",
+        "ambient": 0.72,
+        "directional": 0.9
+      },
+      "particles": {
+        "enabled": true,
+        "type": "fire",
+        "color": "#f97316",
+        "color2": "#facc15"
+      },
+      "hudButtons": [],
+      "elements": [
+        {
+          "id": "pica-text-title",
+          "type": "text",
+          "name": "Texto Principal (Sabor)",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.43,
+            "z": 0.045
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Pipas Mega Pica Limón",
+            "text": "¡Pica con onda! El balance perfecto entre ají picante y limón refrescante.",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "PICA LIMÓN",
+            "color": "#facc15",
+            "gradient": true,
+            "color2": "#38bdf8",
+            "angle": 90,
+            "stroke": "#020617",
+            "strokeWidth": 6,
+            "font": "PipasDisplay",
+            "width": 0.68,
+            "height": 0.145,
+            "background": "",
+            "depth": 0.04
+          }
+        },
+        {
+          "id": "pica-model-main",
+          "type": "model",
+          "name": "Ají en Llamas 3D",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": -0.043,
+            "y": -0.038,
+            "z": 0.072
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.818,
+            "y": 0.818,
+            "z": 0.818
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 54,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Ají en Llamas",
+            "text": "¡Pikachu picante! Sabor fuego para los amantes de las emociones fuertes.",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "chili",
+            "url": "",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        },
+        {
+          "id": "pica-hotspot-badge",
+          "type": "hotspot",
+          "name": "Hotspot Pica Limón",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.22,
+            "y": -0.08,
+            "z": 0.08
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": true
+          },
+          "action": {
+            "type": "popup",
+            "title": "Zona de Calor",
+            "text": "Ingredientes seleccionados: chiles habaneros y jalapeños molidos.",
+            "url": "",
+            "target": ""
+          },
+          "hotspot": {
+            "color": "#ef4444",
+            "size": 0.08
+          }
+        },
+        {
+          "id": "pica-btn-promocion",
+          "type": "button",
+          "name": "Botón Promoción Pica Limón",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": -0.47,
+            "z": 0.05
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "url",
+            "title": "",
+            "text": "",
+            "url": "https://www.pipasmega.com",
+            "target": ""
+          },
+          "button": {
+            "label": "🌶️ Probar Sabor Fuego",
+            "icon": "",
+            "color": "#ef4444",
+            "textColor": "#ffffff",
+            "width": 0.6,
+            "height": 0.16,
+            "shape": "pill",
+            "depth": 0.02
+          }
+        },
+        {
+          "id": "pica_limon-elem-gif",
+          "type": "image",
+          "name": "GIF Animado",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.71,
+            "z": 0.055
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "GIF Animado",
+            "text": "Has tocado: GIF Animado (Composición Pipas Mega Pica Limón)",
+            "url": "",
+            "target": ""
+          },
+          "image": {
+            "url": "assets/sample.gif",
+            "width": 0.4,
+            "speed": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "acid",
+      "targetIndex": 1,
+      "name": "Pipas Mega Acid",
+      "short": "Mega Acid",
+      "emoji": "🍋",
+      "imageUrl": "targets/target_acid.png",
+      "aspect": 0.634765625,
+      "logoZone": {
+        "x0": 0.28,
+        "x1": 0.86,
+        "y0": 0.23,
+        "y1": 0.48
+      },
+      "realPhotos": [
+        "targets/real_acid.jpg"
+      ],
+      "color": "#84cc16",
+      "accent": "#c084fc",
+      "hint": "Apunta la cámara a tu empaque de Pipas Mega Acid (Verde y Morado)",
+      "lights": {
+        "ambientColor": "#ffffff",
+        "ambient": 0.72,
+        "directional": 0.9
+      },
+      "particles": {
+        "enabled": true,
+        "type": "sparkles",
+        "color": "#a3e635",
+        "color2": "#c084fc"
+      },
+      "hudButtons": [],
+      "elements": [
+        {
+          "id": "acid-text-title",
+          "type": "text",
+          "name": "Texto Principal (Sabor)",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.43,
+            "z": 0.045
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Pipas Mega Acid - Sabor Extremo",
+            "text": "¡Explosión cítrica y ácida inigualable! Semillas de girasol horneadas con el auténtico sabor Mega Acid.",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "MEGA ACID",
+            "color": "#a3e635",
+            "gradient": true,
+            "color2": "#38bdf8",
+            "angle": 90,
+            "stroke": "#020617",
+            "strokeWidth": 6,
+            "font": "PipasDisplay",
+            "width": 0.68,
+            "height": 0.145,
+            "background": "",
+            "depth": 0
+          }
+        },
+        {
+          "id": "acid-model-main",
+          "type": "model",
+          "name": "Limón Ácido 3D",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": -0.53,
+            "y": -0.03,
+            "z": 0.07
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.575,
+            "y": 0.575,
+            "z": 0.575
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 54,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Pipas Mega Acid - Limón 3D",
+            "text": "¡Siente la descarga ácida del limón verde en cada semilla!",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "lime",
+            "url": "",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        },
+        {
+          "id": "acid-hotspot-badge",
+          "type": "hotspot",
+          "name": "Hotspot Mega Acid",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.22,
+            "y": -0.08,
+            "z": 0.08
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 0.45,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": true
+          },
+          "action": {
+            "type": "popup",
+            "title": "Fórmula Mega Acid",
+            "text": "Semillas de girasol horneadas cubiertas con un toque cítrico ultra ácido.",
+            "url": "",
+            "target": ""
+          },
+          "hotspot": {
+            "color": "#a5f3fc",
+            "size": 0.08
+          }
+        },
+        {
+          "id": "acid-btn-promocion",
+          "type": "button",
+          "name": "Botón Promoción Acid",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": -0.47,
+            "z": 0.05
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "url",
+            "title": "",
+            "text": "",
+            "url": "https://www.pipasmega.com",
+            "target": ""
+          },
+          "button": {
+            "label": "💥 Ver Premios Pipas Mega",
+            "icon": "",
+            "color": "#84cc16",
+            "textColor": "#020617",
+            "width": 0.6,
+            "height": 0.16,
+            "shape": "pill",
+            "depth": 0.02
+          }
+        },
+        {
+          "id": "elem-wmce4mv",
+          "type": "image",
+          "name": "GIF Giphy Animado",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.005,
+            "y": 0.91,
+            "z": 0.03
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.695,
+            "y": 0.695,
+            "z": 0.695
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "GIF Animado",
+            "text": "Has tocado: GIF Animado",
+            "url": "",
+            "target": ""
+          },
+          "image": {
+            "url": "assets/externos/01.gif",
+            "width": 0.72,
+            "speed": 1
+          }
+        },
+        {
+          "id": "glb-kou2gva",
+          "type": "model",
+          "name": "Sin título",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.157,
+            "y": 0.151,
+            "z": 0.107
+          },
+          "rotation": {
+            "x": 0,
+            "y": 20.1,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.418,
+            "y": 0.418,
+            "z": 0.418
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "none",
+            "title": "",
+            "text": "",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "",
+            "url": "assets/1793166322244_Sin_t_tulo.glb",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        },
+        {
+          "id": "text-mvujd6kz-qd8k",
+          "type": "text",
+          "name": "Texto 3D",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.589,
+            "y": 0.02,
+            "z": 0.264
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.674,
+            "y": 0.674,
+            "z": 0.674
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "none",
+            "title": "",
+            "text": "",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "MEGA",
+            "color": "#84cc16",
+            "gradient": false,
+            "color2": "#ffffff",
+            "angle": 0,
+            "stroke": "#ffffff",
+            "strokeWidth": 0,
+            "font": "PipasDisplay",
+            "width": 0.7,
+            "height": 0.18,
+            "background": "",
+            "depth": 0.032
+          }
+        }
+      ]
+    },
+    {
+      "id": "maraculimon",
+      "targetIndex": 2,
+      "name": "Pipas Mega Maraculimón",
+      "short": "Maraculimón",
+      "emoji": "🍈",
+      "imageUrl": "targets/target_maraculimon.png",
+      "aspect": 0.634765625,
+      "logoZone": {
+        "x0": 0.15,
+        "x1": 0.97,
+        "y0": 0.21,
+        "y1": 0.41
+      },
+      "realPhotos": [
+        "targets/real_maraculimon.jpg"
+      ],
+      "color": "#facc15",
+      "accent": "#16a34a",
+      "hint": "Apunta la cámara a tu empaque de Pipas Mega Maraculimón (Amarillo y Verde)",
+      "lights": {
+        "ambientColor": "#ffffff",
+        "ambient": 0.72,
+        "directional": 0.9
+      },
+      "particles": {
+        "enabled": true,
+        "type": "sparkles",
+        "color": "#facc15",
+        "color2": "#a855f7"
+      },
+      "hudButtons": [],
+      "elements": [
+        {
+          "id": "maracu-text-title",
+          "type": "text",
+          "name": "Texto Principal (Sabor)",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.43,
+            "z": 0.243
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Pipas Mega Maraculimón",
+            "text": "¡Sabor tropical irresistible! La dulzura de la maracuyá combinada con la frescura ácida del limón.",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "MARACULIMÓN",
+            "color": "#16a34a",
+            "gradient": true,
+            "color2": "#38bdf8",
+            "angle": 90,
+            "stroke": "#020617",
+            "strokeWidth": 6,
+            "font": "Hanson-Bold",
+            "width": 0.68,
+            "height": 0.145,
+            "background": "",
+            "depth": 0.04
+          }
+        },
+        {
+          "id": "maracu-text-sub",
+          "type": "text",
+          "name": "Descripción de Producto",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.21,
+            "z": 0.035
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Maraculimón Tropical",
+            "text": "Semillas de girasol horneadas con maracuyá de la costa ecuatoriana y limón natural.",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "SEMILLAS · MARACUYÁ Y LIMÓN",
+            "color": "#ffffff",
+            "gradient": false,
+            "color2": "#38bdf8",
+            "angle": 90,
+            "stroke": "#020617",
+            "strokeWidth": 6,
+            "font": "PipasDisplay",
+            "width": 0.64,
+            "height": 0.115,
+            "background": "",
+            "depth": 0.04
+          }
+        },
+        {
+          "id": "maracu-hotspot-badge",
+          "type": "hotspot",
+          "name": "Hotspot Maraculimón",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.22,
+            "y": -0.08,
+            "z": 0.08
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": true
+          },
+          "action": {
+            "type": "popup",
+            "title": "Fórmula Tropical",
+            "text": "El equilibrio dulce-ácido más pedido por los fanáticos de Pipas Mega.",
+            "url": "",
+            "target": ""
+          },
+          "hotspot": {
+            "color": "#facc15",
+            "size": 0.08
+          }
+        },
+        {
+          "id": "maracu-btn-promocion",
+          "type": "button",
+          "name": "Botón Promoción Maraculimón",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": -0.47,
+            "z": 0.05
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "url",
+            "title": "",
+            "text": "",
+            "url": "https://www.pipasmega.com",
+            "target": ""
+          },
+          "button": {
+            "label": "🍈 Descubre Maraculimón",
+            "icon": "",
+            "color": "#facc15",
+            "textColor": "#020617",
+            "width": 0.6,
+            "height": 0.16,
+            "shape": "pill",
+            "depth": 0.02
+          }
+        },
+        {
+          "id": "maraculimon-elem-gif",
+          "type": "image",
+          "name": "GIF Animado",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.005,
+            "y": 0.71,
+            "z": 0.055
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "GIF Animado",
+            "text": "Has tocado: GIF Animado (Composición Pipas Mega Maraculimón)",
+            "url": "",
+            "target": ""
+          },
+          "image": {
+            "url": "assets/sample.gif",
+            "width": 0.4,
+            "speed": 1
+          }
+        },
+        {
+          "id": "model-mw2utll5-246hm",
+          "type": "model",
+          "name": "roll_fit",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.586,
+            "y": 0.542,
+            "z": -0.134
+          },
+          "rotation": {
+            "x": -180,
+            "y": 72.7,
+            "z": -180
+          },
+          "scale": {
+            "x": 0.994,
+            "y": 0.994,
+            "z": 0.994
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "none",
+            "title": "",
+            "text": "",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "",
+            "url": "assets/uploads/mw2utlkm_roll_fit.glb",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        },
+        {
+          "id": "model-mw2uvu1g-2u9st",
+          "type": "model",
+          "name": "roll_fit",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.006,
+            "y": 1.321,
+            "z": -1.064
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -5.7
+          },
+          "scale": {
+            "x": 1.155,
+            "y": 1.155,
+            "z": 1.155
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "none",
+            "title": "",
+            "text": "",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "",
+            "url": "assets/uploads/mw2uvu0v_roll_fit.glb",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "mate",
+            "roughness": 0.9,
+            "metalness": 0,
+            "emissive": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "verde",
+      "targetIndex": 3,
+      "name": "Pipas Mega Verde",
+      "short": "Mega Verde",
+      "emoji": "🍃",
+      "imageUrl": "targets/target_verde.png",
+      "aspect": 0.634765625,
+      "logoZone": {
+        "x0": 0.34,
+        "x1": 0.97,
+        "y0": 0.23,
+        "y1": 0.47
+      },
+      "realPhotos": [
+        "targets/real_verde.jpg"
+      ],
+      "color": "#16a34a",
+      "accent": "#84cc16",
+      "hint": "Apunta la cámara a tu empaque de Pipas Mega Verde (Verde Sabor Limón)",
+      "lights": {
+        "ambientColor": "#ffffff",
+        "ambient": 0.72,
+        "directional": 0.9
+      },
+      "particles": {
+        "enabled": true,
+        "type": "leaves",
+        "color": "#22c55e",
+        "color2": "#bef264"
+      },
+      "hudButtons": [],
+      "elements": [
+        {
+          "id": "verde-text-title",
+          "type": "text",
+          "name": "Texto Principal (Sabor)",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.43,
+            "z": 0.045
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Pipas Mega Verde - Clásico Limón",
+            "text": "¡El clásico que nunca pasa de moda! Semillas horneadas con el auténtico sabor a limón verde.",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "MEGA VERDE",
+            "color": "#84cc16",
+            "gradient": true,
+            "color2": "#38bdf8",
+            "angle": 90,
+            "stroke": "#020617",
+            "strokeWidth": 6,
+            "font": "PipasDisplay",
+            "width": 0.68,
+            "height": 0.145,
+            "background": "",
+            "depth": 0.04
+          }
+        },
+        {
+          "id": "verde-text-sub",
+          "type": "text",
+          "name": "Descripción de Producto",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.21,
+            "z": 0.035
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Mega Verde Clásico",
+            "text": "Sabor tradicional suave y crujiente para disfrutar en cualquier momento.",
+            "url": "",
+            "target": ""
+          },
+          "text": {
+            "content": "SEMILLAS · SABOR LIMÓN CLÁSICO",
+            "color": "#ffffff",
+            "gradient": false,
+            "color2": "#38bdf8",
+            "angle": 90,
+            "stroke": "#020617",
+            "strokeWidth": 6,
+            "font": "PipasDisplay",
+            "width": 0.64,
+            "height": 0.115,
+            "background": "",
+            "depth": 0.04
+          }
+        },
+        {
+          "id": "verde-model-main",
+          "type": "model",
+          "name": "Limón Clásico 3D",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": -0.13,
+            "z": 0.07
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.634,
+            "y": 0.634,
+            "z": 0.634
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 54,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "Limón Clásico",
+            "text": "Rodaja 3D de limón sutil con textura esmeralda refrescante.",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "lime",
+            "url": "",
+            "color": "#22c55e",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        },
+        {
+          "id": "verde-hotspot-badge",
+          "type": "hotspot",
+          "name": "Hotspot Mega Verde",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.22,
+            "y": -0.08,
+            "z": 0.08
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": true
+          },
+          "action": {
+            "type": "popup",
+            "title": "Sabor Original",
+            "text": "Horneadas sin aditivos artificiales, conservando todo el poder del girasol.",
+            "url": "",
+            "target": ""
+          },
+          "hotspot": {
+            "color": "#10b981",
+            "size": 0.08
+          }
+        },
+        {
+          "id": "verde-btn-promocion",
+          "type": "button",
+          "name": "Botón Promoción Verde",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": -0.47,
+            "z": 0.05
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "url",
+            "title": "",
+            "text": "",
+            "url": "https://www.pipasmega.com",
+            "target": ""
+          },
+          "button": {
+            "label": "🍃 Descubre Mega Verde",
+            "icon": "",
+            "color": "#16a34a",
+            "textColor": "#ffffff",
+            "width": 0.6,
+            "height": 0.16,
+            "shape": "pill",
+            "depth": 0.02
+          }
+        },
+        {
+          "id": "verde-elem-gif",
+          "type": "image",
+          "name": "GIF Animado",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0,
+            "y": 0.71,
+            "z": 0.055
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "popup",
+            "title": "GIF Animado",
+            "text": "Has tocado: GIF Animado (Composición Pipas Mega Verde)",
+            "url": "",
+            "target": ""
+          },
+          "image": {
+            "url": "assets/sample.gif",
+            "width": 0.4,
+            "speed": 1
+          }
+        },
+        {
+          "id": "model-mw2uylr2-2vojy",
+          "type": "model",
+          "name": "roll_fit",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.048,
+            "y": 1.082,
+            "z": 0.072
+          },
+          "rotation": {
+            "x": -4.6,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.018,
+            "y": 1.018,
+            "z": 1.018
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "none",
+            "title": "",
+            "text": "",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "",
+            "url": "assets/uploads/mw2uylqj_roll_fit.glb",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        },
+        {
+          "id": "model-mw2v0y5l-3mubx",
+          "type": "model",
+          "name": "roll_fit",
+          "visible": true,
+          "group": "",
+          "position": {
+            "x": 0.259,
+            "y": 0.39,
+            "z": -0.244
+          },
+          "rotation": {
+            "x": 163,
+            "y": 67.5,
+            "z": -163.9
+          },
+          "scale": {
+            "x": 0.74,
+            "y": 0.74,
+            "z": 0.74
+          },
+          "opacity": 1,
+          "billboard": false,
+          "anim": {
+            "spin": 0,
+            "float": 0,
+            "pulse": false
+          },
+          "action": {
+            "type": "none",
+            "title": "",
+            "text": "",
+            "url": "",
+            "target": ""
+          },
+          "model": {
+            "kind": "",
+            "url": "assets/uploads/mw2v0y54_roll_fit.glb",
+            "color": "",
+            "texture": ""
+          },
+          "material": {
+            "preset": "",
+            "roughness": null,
+            "metalness": null,
+            "emissive": 0
+          }
+        }
+      ],
+      "realOnly": true
+    }
+  ]
+}
